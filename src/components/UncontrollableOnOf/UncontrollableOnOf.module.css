@@ -1,0 +1,16 @@
+.circle {
+  display: inline-block;
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.activated {
+  background-color: chartreuse;
+}
+
+.deactivated {
+  background-color: tomato;
+}
