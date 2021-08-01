@@ -6,6 +6,7 @@ import Accordion from "./components/Accordion/Accordion";
 import OnOf from "./components/OnOf/OnOf";
 import UncontrollableInput from "./components/UncontrollableInput/UncontrollableInput";
 import CustomSelect from "./components/CustomSelect/CustomSelect";
+import UncontrollableAccordion from "./components/UncontrollableAccordion/UncontrollableAccordion";
 
 function App() {
   let [ratingValue, setRatingValue] = useState<RatingValueType>(0);
@@ -43,6 +44,7 @@ function App() {
           {value: 4, title: 'Masha'},
         ]
       }/>
+      <UncontrollableAccordion title={'bla bla'}/>
     </div>
   );
 }
