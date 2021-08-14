@@ -6,8 +6,15 @@ type optionType = {
   title: string
 }
 
+export type cityOptions = {
+  value: number
+  title: string
+  headcount: number
+  country: string
+}
+
 type CustomSelectPropsType = {
-  options: optionType[]
+  options: optionType[] | cityOptions[]
 }
 
 function CustomSelect(props: CustomSelectPropsType) {

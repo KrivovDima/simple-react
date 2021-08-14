@@ -7,6 +7,8 @@ import OnOf from "./components/OnOf/OnOf";
 import UncontrollableInput from "./components/UncontrollableInput/UncontrollableInput";
 import CustomSelect from "./components/CustomSelect/CustomSelect";
 import UncontrollableAccordion from "./components/UncontrollableAccordion/UncontrollableAccordion";
+import {Example1} from "./components/ReactMemo/ReactMemo";
+import {UseMemo} from "./components/UseMemo/UseMemo";
 
 function App() {
   let [ratingValue, setRatingValue] = useState<RatingValueType>(0);
@@ -15,36 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      {/*<Rating onClick={setRatingValue} ratingValue={ratingValue}/>*/}
-      {/*<UncontrollableRating/>*/}
-      {/*<OnOf setOn={setOn} on={on}/>*/}
-      {/*<UncontrollableInput/>*/}
-      {/*<Accordion title={'Menu'}*/}
-      {/*           setAccordionCollapsed={() => {*/}
-      {/*             setCollapsed(!collapsed)*/}
-      {/*           }}*/}
-      {/*           collapsed={collapsed}*/}
-      {/*           items={*/}
-      {/*             [*/}
-      {/*               {title: 'Dima', value: 1},*/}
-      {/*               {title: 'Aliya', value: 2},*/}
-      {/*               {title: 'Dasha', value: 3},*/}
-      {/*               {title: 'Masha', value: 4},*/}
-      {/*             ]*/}
-      {/*           }*/}
-      {/*           clickFn={(value, title) => {*/}
-      {/*             alert(`${value} ${title}`);*/}
-      {/*           }*/}
-      {/*           }/>*/}
-      <CustomSelect options={
-        [
-          {value: 1, title: 'Dima'},
-          {value: 2, title: 'Aliya'},
-          {value: 3, title: 'Dasha'},
-          {value: 4, title: 'Masha'},
-        ]
-      }/>
-      <UncontrollableAccordion title={'bla bla'}/>
+      <UseMemo/>
     </div>
   );
 }
