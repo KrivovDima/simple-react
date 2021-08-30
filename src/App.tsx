@@ -9,6 +9,7 @@ import CustomSelect from "./components/CustomSelect/CustomSelect";
 import UncontrollableAccordion from "./components/UncontrollableAccordion/UncontrollableAccordion";
 import {Example1} from "./components/ReactMemo/ReactMemo";
 import {UseMemo} from "./components/UseMemo/UseMemo";
+import UseEffect from "./components/UseEffect/UseEffect";
 
 function App() {
   let [ratingValue, setRatingValue] = useState<RatingValueType>(0);
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <UseMemo/>
+      <UseEffect/>
     </div>
   );
 }
