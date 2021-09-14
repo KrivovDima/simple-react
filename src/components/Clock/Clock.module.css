@@ -1,0 +1,31 @@
+.analogClock {
+  position: relative;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.secondArrow,
+.hourArrow,
+.minuteArrow {
+  width: 2px;
+  border: 1px solid #000;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom;
+}
+
+.secondArrow {
+  height: 85px;
+}
+
+.hourArrow {
+  height: 50px;
+}
+
+.minuteArrow {
+  height: 67px;
+}

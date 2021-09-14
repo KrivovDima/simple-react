@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState} from 'react';
+import styles from './Clock.module.css'
 
 type ClockPropsType = {}
 
@@ -20,12 +21,24 @@ export const Clock: React.FC<ClockPropsType> = () => {
 
   return (
     <div>
-      <span>{refactorFormatElementClock(date.getHours())}</span>
-      :
-      <span>{refactorFormatElementClock(date.getMinutes())}</span>
-      :
-      <span>{refactorFormatElementClock(date.getSeconds())}</span>
+      <div>
+        <span>{refactorFormatElementClock(date.getHours())}</span>
+        :
+        <span>{refactorFormatElementClock(date.getMinutes())}</span>
+        :
+        <span>{refactorFormatElementClock(date.getSeconds())}</span>
+      </div>
+
+      <div className={styles.analogClock}>
+        <div className={styles.secondArrow}
+             style={{transform: `translateX(-50%) rotate(${date.getSeconds() * 6}deg)`}}></div>
+        <div className={styles.hourArrow}
+             style={{transform: `translateX(-50%) rotate(${date.getHours() * 30}deg)`}}></div>
+        <div className={styles.minuteArrow}
+             style={{transform: `translateX(-50%) rotate(${date.getMinutes() * 6}deg)`}}></div>
+      </div>
     </div>
+
   )
 }
 
